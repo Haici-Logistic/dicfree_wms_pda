@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">YBWMS</string>
+
+    <string name="error_no_network">网络未连接</string>
+    <string name="error_timeout">网络请求超时</string>
+    <string name="error_busy">服务繁忙</string>
+    <string name="error_token_expired">凭据已经过期</string>
+    <string name="index_title">Navigation</string>
+    <string name="main_title">Product Onslelf</string>
+    <string name="onslelf_undo_list_title">Onslelf Undo List</string>
+    <string name="offslelf_undo_list_title">Offslelf Undo List</string>
+
+    <string name="offshelf_title">Product Wave Offslelf</string>
+    <string name="product_wave_locaton_title">Product Wave Collection</string>
+    <string name="product_wave_locaton_list_title">Wave Collection Undo List</string>
+    <string name="basket_main_title">Basket Alloction</string>
+    <string name="permission">Authority</string>
+    <string name="no_permission">No positioning permission</string>
+    <string name="pdf_error">Failed to get PDF</string>
+    <string name="no_read">No read file permission</string>
+    <string name="camera">Scanning requires camera permission</string>
+    <string name="gps_permission">Android 8.0 system needs to turn on GPS positioning function to search for Bluetooth!\nPlease choose whether to enable</string>
+    <string name="camera_permission">Failed to obtain permission, unable to use scanning function</string>
+    <string name="search">Searching</string>
+    <string name="connecting">Connecting</string>
+    <string name="search_no_devices">暂未搜索到对应的设备</string>
+    <string name="printer_connect_fail">蓝牙打印机连接失败</string>
+    <string name="printer_disconnect">蓝牙打印机连接已断开</string>
+    <string name="please_select_printer">请选择需要连接的打印机</string>
+
+
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="label_data">Data:</string>
+    <string name="label_device_address">Device address:</string>
+    <string name="label_state">State:</string>
+    <string name="no_data">No data</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="title_devices">BLE Device Scan</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+
+    <string name="unknown_device">Unknown device</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
+    <string name="unknown_service">Unknown service</string>
+
+    <!-- Menu items -->
+    <string name="menu_connect">Connect</string>
+    <string name="menu_disconnect">Disconnect</string>
+    <string name="menu_scan">Scan</string>
+    <string name="menu_stop">Stop</string>
+</resources>

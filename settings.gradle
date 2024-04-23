@@ -1,0 +1,2 @@
+rootProject.name = "dicfree_pda"
+include ':app'

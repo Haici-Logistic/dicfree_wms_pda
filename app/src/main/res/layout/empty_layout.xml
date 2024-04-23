@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:background="@color/white"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <TextView
+        android:id="@+id/tv_empty_tips"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_centerInParent="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:textColor="@color/black"
+        android:textSize="@dimen/toolbar_title_size" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+ext {
+    // app 相关版本控制
+    versions = [
+            sdkMinVersion    : 26,
+            sdkTargetVersion : 29,
+
+            sdkCompileVersion: 29,
+            toolsBuildVersion: "29.0.2",
+
+            appVersionCode   : 5,
+            appVersionName   : "1.0.5"
+
+
+    ]
+    cfgs = [
+            compileSdkVersion             : 29,
+            buildToolsVersion             : "29.0.2",
+            minSdkVersion                 : 23,
+            targetSdkVersion              : 29
+            ]
+}

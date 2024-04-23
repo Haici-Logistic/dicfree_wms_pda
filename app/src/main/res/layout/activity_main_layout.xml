@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/include_title"
+        layout="@layout/rela_title_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Code"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_text_size"
+            android:layout_marginTop="80dp" />
+
+        <TextView
+            android:id="@+id/tv_product_code"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:textSize="@dimen/common_text_size"
+            android:background="@drawable/gray_6_roundcorner_bg"
+            android:layout_height="44dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shelf Code"
+            android:textSize="@dimen/common_text_size"
+            android:textColor="@color/black"
+            android:layout_marginTop="80dp" />
+
+        <TextView
+            android:id="@+id/tv_shelf_code"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/common_text_size"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:background="@drawable/gray_6_roundcorner_bg"
+            android:layout_height="44dp"/>
+        <TextView
+            android:id="@+id/tv_scan"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_text_size"
+            android:visibility="gone"
+            android:background="@color/color_theme"
+            android:text="打 印"/>
+
+        <TextView
+            android:id="@+id/tv_offshelf"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_text_size"
+            android:visibility="gone"
+            android:background="@color/color_theme"
+            android:text="下 架"/>
+        <TextView
+            android:id="@+id/tv_collection"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_text_size"
+            android:visibility="gone"
+            android:background="@color/color_theme"
+            android:text="集 货"/>
+        <TextView
+            android:id="@+id/tv_basket"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_text_size"
+            android:visibility="gone"
+            android:background="@color/color_theme"
+            android:text="分 篮"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cm_fmlyt_loading"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="@dimen/cm_loading_dialog_width"
+        android:layout_height="@dimen/cm_loading_dialog_height"
+        android:layout_gravity="center"
+        android:background="@drawable/cm_dialog_background">
+
+
+        <ImageView
+            android:id="@+id/cm_iv_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/cm_dialog_margin_top"
+            android:src="@mipmap/ic_loading"
+            app:layout_constraintBottom_toTopOf="@+id/cm_tv_loading"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/cm_tv_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/cm_dialog_margin_bottom"
+            android:maxLines="1"
+            android:text="loading..."
+            android:textColor="#CCFFFFFF"
+            android:textSize="@dimen/cm_dialog_message_text_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cm_iv_loading" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
+

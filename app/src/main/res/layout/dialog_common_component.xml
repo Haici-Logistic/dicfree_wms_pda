@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E6E6E6"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0.5dp"
+            android:background="#FFFFFF"
+            android:paddingLeft="24dp"
+            android:paddingTop="30dp"
+            android:paddingBottom="30dp">
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/ScrollView"
+                android:layout_marginBottom="18dp"
+                android:layout_marginRight="24dp"
+                android:textColor="#262626"
+                android:textSize="17sp"
+                android:gravity="center"
+                tools:text="这里是标题这里是标题这里题里题"/>
+
+            <ScrollView
+                android:id="@+id/ScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbarSize="3dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHeight_max="277dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintHorizontal_bias="0.628"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title">
+
+                <TextView
+                    android:id="@+id/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="13dp"
+                    android:textColor="#727272"
+                    android:textSize="15sp"
+                    tools:text="这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容" />
+
+            </ScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:id="@+id/type_1"
+            android:background="#FFFFFF"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/center"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="#E6E6E6"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <FrameLayout
+                android:id="@+id/text1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/center"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="#727272"
+                    android:textSize="15sp"
+                    tools:text="取消" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/text2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/center"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="#406A70"
+                    android:textSize="15sp"
+                    tools:text="取消" />
+
+            </FrameLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:id="@+id/type_2"
+            android:background="#FFFFFF"
+            android:visibility="visible"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="#406A70"
+                    android:textSize="15sp"
+                    tools:text="取消" />
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

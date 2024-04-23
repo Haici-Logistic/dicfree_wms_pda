@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/include_title"
+        layout="@layout/rela_title_layout" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:id="@+id/content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_wave_code"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/color_F1F5F7"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:text="" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Shelf Code"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/common_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_shelf_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@drawable/gray_6_roundcorner_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/common_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Product Code"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/common_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_product_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@drawable/gray_6_roundcorner_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/common_text_size" />
+            </LinearLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_offshelf_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="20dp" />
+                <include
+                    android:id="@+id/include_empty"
+                    android:visibility="gone"
+                    layout="@layout/empty_layout" />
+            </FrameLayout>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/rl_wave_layout"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingBottom="140dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_shelf_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text="Wave Collection Location"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_next"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:textColor="@color/black"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:layout_marginBottom="100dp"
+                android:background="@drawable/gray_6_roundcorner_bg"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:text="Next"/>
+        </RelativeLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

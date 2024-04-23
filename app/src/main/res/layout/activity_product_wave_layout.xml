@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/include_title"
+        layout="@layout/rela_title_layout" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/tv_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:text="Bluetooth printer link status"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_text_size" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_tips"
+            android:background="@drawable/shape_green_circle_bg" />
+
+        <TextView
+            android:id="@+id/tv_connect_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Offline"
+            android:layout_toRightOf="@+id/view"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_text_size" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Location"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_text_size" />
+
+            <TextView
+                android:id="@+id/tv_location_code"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/gray_6_roundcorner_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_text_size" />
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_collection_list"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="20dp" />
+            <include
+                android:id="@+id/include_empty"
+                android:visibility="gone"
+                layout="@layout/empty_layout" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
